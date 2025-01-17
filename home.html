@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School/College Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #002e4d;
+            color: white;
+            padding: 10px 20px;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .header span {
+            margin: 0 15px;
+        }
+
+        /* Title Section */
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #008cdd;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #004080;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #0059b3;
+        }
+
+        /* Content Section */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: calc(100vh - 200px);
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .profile-picture {
+            width: 40%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-inner {
+            height: 400px;
+        }
+
+        .c-img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+
+        /* Notifications Section */
+        .notifications {
+            background-color: red;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .notifications .static-text {
+            flex-shrink: 0;
+            font-weight: bold;
+            margin-right: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .notifications .marquee {
+            display: inline-block;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .notifications .marquee-container {
+            overflow: hidden;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .c-item {
+            height: 400px;
+        }
+
+        /* Mobile & Tablet Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .profile-picture {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .carousel-inner {
+                height: 200px;
+            }
+
+            .c-img {
+                object-fit: fill;
+            }
+
+            .navbar a {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+
+            .notifications {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header span {
+                font-size: 12px;
+            }
+
+            .title {
+                font-size: 24px;
+                padding: 15px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .notifications {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .profile-picture {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .carousel-inner {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <!-- Header Section -->
+        <div class="header">
+            <span>Technical Support: ✉ example@gmail.com</span>
+            <span>📞 +91 XXXXXXXXXX</span>
+        </div>
+
+        <!-- Title Section -->
+        <div class="title">
+            Name and Details of the School or College
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">Admission</a>
+            <a href="#">ONLINE CLASSROOM</a>
+            <a href="#">Gallery</a>
+            <a href="#">Notice</a>
+            <a href="#">Link</a>
+        </div>
+
+        <!-- Content Section -->
+        <div class="container">
+            <!-- Profile Picture with slider -->
+            <div class="profile-picture">
+                <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active c-item">
+                            <img src="profile1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item c-item">
+                            <img src="profile2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item c-item">
+                            <img src="profile3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notice Section -->
+            <div class="notice">Notice</div>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="notifications">
+            <span class="static-text">Latest Notifications:</span>
+            <div class="marquee-container">
+                <div class="marquee">After changing the default password, it will be redirected to the login page again,
+                    and the user needs to log in with the changed password. | <b>NEW</b></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
