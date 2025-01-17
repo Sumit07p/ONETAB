@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <style>
+    /* General page styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f4f1; /* Light green background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px 30px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      width: 340px;
+      text-align: center;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #00305d; /* Soft blue for title */
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .option-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 12px 0;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Blue-green color theme for buttons */
+    .merchant-btn {
+      background-color: #56ccf2; /* Cool blue */
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+    }
+
+    .institute-btn {
+      background-color: #48c78e; /* Fresh green */
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+    }
+
+    .medical-btn {
+      background-color: #4e94d1; /* Blue-green blend */
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+    }
+
+    /* Hover effects for interactivity */
+    .option-button:hover {
+      transform: translateY(-5px); /* Floating effect */
+      opacity: 0.9;
+    }
+    a{
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Registration Options</h2>
+    <a href="marchentsignup.html"><button class="option-button merchant-btn">Merchant Registration</button></a>
+    <a href="signup.html"><button class="option-button institute-btn">Institute Registration</button></a>
+    <a href="signup.html"><button class="option-button medical-btn">Medical Service Registration</button></a>
+  </div>
+
+</body>
+</html>

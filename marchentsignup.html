@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTab Merchant Registration</title>
+    <link rel="stylesheet" href="marchentsignup.css">
+</head>
+
+<body>
+    <div class="split-screen">
+        <!-- Left Section -->
+        <div class="left">
+            <div class="content">
+                <div class="logo">One<span class="highlight">Tab</span></div>
+                <p>Welcome to the easiest platform for merchants. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Voluptatum excepturi repudiandae debitis perspiciatis? Doloribus officiis provident nisi,
+                    dicta omnis, perspiciatis, eveniet consequuntu</p>
+            </div>
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="right">
+            <div class="form-container">
+                <h2>Merchant Registration</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="shop-name">Shop Name <span class="mandatory">*</span></label>
+                        <input type="text" id="shop-name" name="shop-name" placeholder="Enter your shop name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gstin">GSTIN Number</label>
+                        <input type="text" id="gstin" name="gstin" placeholder="Enter your GSTIN number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="mandatory">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Complete Address / Current Location <span
+                                class="mandatory">*</span></label>
+                        <textarea id="address" name="address" placeholder="Enter your full address or location"
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="shop-type">Type of Shop</label>
+                        <input type="text" id="shop-type" name="shop-type" placeholder="What does your shop sell?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="audience">Targeted Audience</label>
+                        <input type="text" id="audience" name="audience" placeholder="Describe your targeted audience">
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+                </form>
+                <p>Already have an account? <a href="login.html" class="highlight">Sign in</a></p>
+                <p>By registering, you agree to OneTab's <a href="#" class="highlight">Terms & Conditions</a> and <a
+                        href="#" class="highlight">Privacy Policy</a>.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
